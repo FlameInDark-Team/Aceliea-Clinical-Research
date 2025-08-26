@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solutions - Aceliea Clinical Research</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Reuse same navbar from homepage -->
+  <header id="navbar-placeholder"></header>
+  <main>
+    <section class="solutions-section">
+      <h1 class="section-title">Our Solutions</h1>
+      <div class="solutions-grid">
+        <div class="solution-box" style="background-image: url('images/clinical.jpg')">
+          <div class="solution-overlay">
+            <h2>Clinical Trial Management</h2>
+            <p>Full-service trial planning, execution & support.</p>
+            <a href="#" class="btn-know-more">Know More</a>
+          </div>
+          <div class="solution-title">Clinical Trial Management</div>
+        </div>
+
+        <div class="solution-box" style="background-image: url('images/regulatory.jpg')">
+          <div class="solution-overlay">
+            <h2>Regulatory Consulting</h2>
+            <p>Ensure global and regional compliance effectively.</p>
+            <a href="#" class="btn-know-more">Know More</a>
+          </div>
+          <div class="solution-title">Regulatory Consulting</div>
+        </div>
+
+        <div class="solution-box" style="background-image: url('images/data.jpg')">
+          <div class="solution-overlay">
+            <h2>Data Management</h2>
+            <p>Clean, secure and regulatory-compliant data.</p>
+            <a href="#" class="btn-know-more">Know More</a>
+          </div>
+          <div class="solution-title">Data Management</div>
+        </div>
+
+        <div class="solution-box" style="background-image: url('images/medical.jpg')">
+          <div class="solution-overlay">
+            <h2>Medical Writing</h2>
+            <p>Scientific documentation with accuracy and clarity.</p>
+            <a href="#" class="btn-know-more">Know More</a>
+          </div>
+          <div class="solution-title">Medical Writing</div>
+        </div>
+
+        <div class="solution-box" style="background-image: url('images/statistics.jpg')">
+          <div class="solution-overlay">
+            <h2>Biostatistics</h2>
+            <p>Informed decisions based on deep statistical analysis.</p>
+            <a href="#" class="btn-know-more">Know More</a>
+          </div>
+          <div class="solution-title">Biostatistics</div>
+        </div>
+
+        <div class="solution-box" style="background-image: url('images/monitoring.jpg')">
+          <div class="solution-overlay">
+            <h2>Site Monitoring</h2>
+            <p>Ensure data integrity and regulatory compliance.</p>
+            <a href="#" class="btn-know-more">Know More</a>
+          </div>
+          <div class="solution-title">Site Monitoring</div>
+        </div>
+
+        <div class="solution-box" style="background-image: url('images/pharmacovigilance.jpg')">
+          <div class="solution-overlay">
+            <h2>Pharmacovigilance</h2>
+            <p>Patient safety & adverse event tracking.</p>
+            <a href="#" class="btn-know-more">Know More</a>
+          </div>
+          <div class="solution-title">Pharmacovigilance</div>
+        </div>
+
+        <div class="solution-box" style="background-image: url('images/logistics.jpg')">
+          <div class="solution-overlay">
+            <h2>Clinical Logistics</h2>
+            <p>Fast, reliable supplies to sites and depots worldwide.</p>
+            <a href="#" class="btn-know-more">Know More</a>
+          </div>
+          <div class="solution-title">Clinical Logistics</div>
+        </div>
+
+        <div class="solution-box" style="background-image: url('images/project.jpg')">
+          <div class="solution-overlay">
+            <h2>Project Management</h2>
+            <p>On-time, on-budget trial delivery by expert teams.</p>
+            <a href="#" class="btn-know-more">Know More</a>
+          </div>
+          <div class="solution-title">Project Management</div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+      <h2>Talk to an Expert Team Member</h2>
+      <p>Receive a timely response to an enquiry about a service, process or technical questions.<br>
+        Enter your details and the right person at Aceliea will get in touch with you soon.</p>
+
+      <form class="expert-contact-form" action="https://formsubmit.co/acceliaclinicalsolution@gmail.com?success=true"
+        method="POST">
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="Talk to an Expert Team Member Form">
+        <input type="hidden" name="form_origin" value="Talk to an Expert Team Member Form">
+        <input type="hidden" name="_autoresponse" value="Thank you for contacting Aceliea. We'll get back to you soon!">
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+      <div id="form-success-message" class="success-alert" style="display: none;">
+        ✅ Thank you! Your message has been sent successfully.
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Locations - Aceliea Clinical Research</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header id="navbar-placeholder"></header>
+
+  <main class="locations-page">
+    <section class="contact-location-section">
+      <div class="contact-locations-wrapper">
+        <h2 id="office-title">Offices in Your Area</h2>
+        <div class="office-grid" id="user-location-office">
+          <!-- This will be dynamically populated based on user's location -->
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form-section styled-contact">
+      <div class="contact-form-wrapper">
+        <div class="contact-intro">
+          <h2>Get in Touch</h2>
+          <p>Fill in the form and the right Aceliea expert will get back to you shortly.</p>
+        </div>
+
+        <form class="expert-contact-form" action="https://formsubmit.co/acceliaclinicalsolution@gmail.com?success=true"
+          method="POST">
+
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_subject" value="Get in Touch Form Submission">
+          <input type="hidden" name="form_origin" value="Get in Touch Form">
+          <input type="hidden" name="_autoresponse"
+            value="Thank you for contacting Aceliea. We'll get back to you soon!">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" />
+            </div>
+
+            <div class="form-group">
+              <label for="country">Country</label>
+              <input type="text" id="country" name="country" />
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">How can we help?</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="submit-btn">Send</button>
+          </div>
+
+        </form>
+      </div>
+      <div id="form-success-message" class="success-alert" style="display: none;">
+        ✅ Thank you! Your message has been sent successfully.
+      </div>
+      </div>
+    </section>
+
+    <section class="all-global-offices">
+      <h2>All Aceliea Global Offices</h2>
+      <div class="office-grid">
+        <div class="office-card" style="background-image: url('images/india-office.jpg');">
+          <div class="office-overlay">
+            <h3>Bangalore</h3>
+            <p>Unit 1, Block E, Helios Business Park, Bangalore 560103, India</p>
+            <p><strong>📞</strong> +91 80 4164 8996</p>
+          </div>
+        </div>
+
+        <div class="office-card" style="background-image: url('images/usa-office.jpg');">
+          <div class="office-overlay">
+            <h3>Boston</h3>
+            <p>123 Seaport Blvd, Boston, MA 02210, USA</p>
+            <p><strong>📞</strong> +1 617-123-4567</p>
+          </div>
+        </div>
+
+        <div class="office-card" style="background-image: url('images/germany-office.jpg');">
+          <div class="office-overlay">
+            <h3>Frankfurt</h3>
+            <p>Friedrich-Ebert-Anlage 35, 60327 Frankfurt, Germany</p>
+            <p><strong>📞</strong> +49 69 12345678</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aceliea Clinical Research. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="user-location.js"></script>
+</body>
+
+</html>
